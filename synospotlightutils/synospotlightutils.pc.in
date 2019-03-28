@@ -1,0 +1,12 @@
+prefix=@PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+
+Name: @CONFIG_NAME@
+Version: 1.0
+Description: Synology content search library
+Requires: @REQUIRES@
+Requires.private: @REQUIRES_PRIVATE@
+Libs: -L${libdir} -lsynospotlightutils
+Libs.private: @LIBS_PRIVATE@
+Cflags: 

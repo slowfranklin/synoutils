@@ -1,0 +1,15 @@
+#!/bin/bash
+# Copyright (c) 2000-2015 Synology Inc. All rights reserved.
+
+case ${CleanOnly} in
+	[Yy][Ee][Ss])
+		return
+		;;
+esac
+
+make remoteinstall $SynoInstallLayout
+
+SL_RESOURCE_DIR=/usr/syno/share/synospotlight
+
+mkdir -p ${TmpInstDir}/${SL_RESOURCE_DIR}
+install -m644 resource/info_plist_syno.xml ${TmpInstDir}/${SL_RESOURCE_DIR}/uttype.xml

@@ -1,0 +1,10 @@
+#!/bin/bash
+# Copyright (c) 2000-2015 Synology Inc. All rights reserved.
+
+case ${CleanOnly} in
+	[Yy][Ee][Ss])
+		return
+		;;
+esac
+
+make remoteinstall $SynoInstallLayout

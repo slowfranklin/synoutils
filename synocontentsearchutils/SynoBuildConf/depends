@@ -1,0 +1,8 @@
+[BuildDependent-Tag]
+jsoncpp
+libsynocore
+libsynodaemon
+libsynofileop
+libsynosdk
+libsynoshare
+
